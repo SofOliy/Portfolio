@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books – SOL Portfolio</title>
+
+  <!-- ✅ Preload Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Swiper Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: cover;
+    }
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .back-button:hover { background: #f0f0f0; }
+
+    section {
+      padding: 4rem 2rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-item {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+    .project-item:hover {
+      transform: scale(1.02);
+    }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f8f8;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: auto;
+    }
+
+    #test .project-item {
+      transform: scale(0.95);
+      padding: 0.5rem;
+    }
+
+    #test .project-item img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      font-size: 0.875rem;
+      color: #888;
+    }
+    
+   
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:#000;">VersalDGN</a></div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#test">Test Work</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" style="position: relative;">
+    <img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-06-01%20213721.png?v=1748807634214" alt="Main Photo">
+    <a class="back-button" href="index.html">← Back</a>
+  </div>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Carousel 1 -->
+      <div class="project-item">
+        <h3>Typography Book A</h3>
+        <p>Typography-focused book design</p>
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/1.1.png?v=1751830724494" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/1.png?v=1751830741700" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/2.png?v=1751830748458" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/3.png?v=1751830762354" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.png?v=1751830751296" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/6.png?v=1751830760580" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/7..png?v=1751830750322" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/8.png?v=1751830756048" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/9.png?v=1751830752815" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/10.png?v=1751830762020" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/11.png?v=1751830756868" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/12.png?v=1751959809956" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/13.png?v=1751830761633" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/14.png?v=1751830770226" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/15.png?v=1751830773333" /></div><div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/16.png?v=1751830772946" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/17.png?v=1751830772684" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/18.png?v=1751830781314" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/19.png?v=1751830780334" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/20.png?v=1751830778206" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/21.png?v=1751830775830" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/22.png?v=1751830786768" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/23.png?v=1751830779124" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/24.png?v=1751830784363" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/25.png?v=1751830787749" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/26.png?v=1751830785678" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/27.png?v=1751830795400" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/28.png?v=1751830796732" /></div>
+             <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/29.png?v=1751830795400" /></div>
+             <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/30.png?v=1751830798070" /></div>
+             <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/31.png?v=1751830795848" /></div>
+            
+            
+          
+            <!-- Добавь до 40 слайдов по желанию -->
+          </div>
+          <div class="swiper-button-next swiper1-next"></div>
+          <div class="swiper-button-prev swiper1-prev"></div>
+        </div>
+      </div>
+
+      <!-- Carousel 2 -->
+      <div class="project-item">
+        <h3>Typography Book B</h3>
+        <p>Second book with matching layout</p>
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/1.1.1.png?v=1751917868647" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/2.2.2.png?v=1751917875974" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/3.3.3.png?v=1751917876864" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.4.4.png?v=1751917888911" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/5.5.5.png?v=1751917910161" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/6.6.6.png?v=1751917903106" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/7.7.7.png?v=1751917899786" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/8.8.8.png?v=1751917910913" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/9.9.9.png?v=1751917910489" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/10.10.10.png?v=1751917920789" /></div>
+           
+            
+          </div>
+          <div class="swiper-button-next swiper2-next"></div>
+          <div class="swiper-button-prev swiper2-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<section id="test" class="p-6">
+  <h2 class="text-2xl font-semibold mb-6">Test Work</h2>
+  <div class="flex flex-row gap-4">
+
+    <!-- Блок 1 -->
+    <div class="w-1/4 aspect-square bg-gray-100 rounded-lg p-3 flex flex-col">
+      <h3 class="text-center mb-2 font-semibold">Project 1</h3>
+      <div class="swiper swiper-project1 rounded-md overflow-hidden flex-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/2.2.png?v=1751917457212"
+              alt="P1-1"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/3.3.png?v=1751917458857"
+              alt="P1-2"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.4.png?v=1751917454822"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/5.5.png?v=1751917456735"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/6.6.png?v=1751917459131"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/7.7.png?v=1751917461922"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/8.8.png?v=1751917475515"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/9.9.png?v=1751917486098"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/10.10.png?v=1751917486882"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+           <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/11.11.png?v=1751917487131"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/12.12.png?v=1751917489337"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/13.13.png?v=1751917485157"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/1414.png?v=1751917498318"
+              alt="P1-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          
+          
+        </div>
+        <div class="swiper-button-prev swiper-project1-prev"></div>
+        <div class="swiper-button-next swiper-project1-next"></div>
+      </div>
+    </div>
+
+    <!-- Блок 2 -->
+    <div class="w-1/4 aspect-square bg-gray-100 rounded-lg p-3 flex flex-col">
+      <h3 class="text-center mb-2 font-semibold">Project 2</h3>
+      <div class="swiper swiper-project2 rounded-md overflow-hidden flex-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.4.png?v=1751917457212"
+              alt="P2-1"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/2.2.png?v=1751917457212"
+              alt="P2-2"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/14.png?v=1751830770226"
+              alt="P2-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-project2-prev"></div>
+        <div class="swiper-button-next swiper-project2-next"></div>
+      </div>
+    </div>
+
+    <!-- Блок 3 -->
+    <div class="w-1/4 aspect-square bg-gray-100 rounded-lg p-3 flex flex-col">
+      <h3 class="text-center mb-2 font-semibold">Project 3</h3>
+      <div class="swiper swiper-project3 rounded-md overflow-hidden flex-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/3.3.png?v=1751917457212"
+              alt="P3-1"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.4.png?v=1751917457212"
+              alt="P3-2"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/2.2.png?v=1751917457212"
+              alt="P3-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-project3-prev"></div>
+        <div class="swiper-button-next swiper-project3-next"></div>
+      </div>
+    </div>
+
+    <!-- Блок 4 -->
+    <div class="w-1/4 aspect-square bg-gray-100 rounded-lg p-3 flex flex-col">
+      <h3 class="text-center mb-2 font-semibold">Project 4</h3>
+      <div class="swiper swiper-project4 rounded-md overflow-hidden flex-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/14.png?v=1751830770226"
+              alt="P4-1"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/3.3.png?v=1751917457212"
+              alt="P4-2"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/4.4.png?v=1751917457212"
+              alt="P4-3"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-project4-prev"></div>
+        <div class="swiper-button-next swiper-project4-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    © 2025 SOL Portfolio – All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper('.swiper1', {
+      navigation: {
+        nextEl: '.swiper1-next',
+        prevEl: '.swiper1-prev',
+      },
+      loop: true,
+      slidesPerView: 1,
+    });
+
+    
+const swiperProject1 = new Swiper('.swiper-project1', {
+    navigation: {
+      nextEl: '.swiper-project1-next',
+      prevEl: '.swiper-project1-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+  });
+
+  const swiperProject2 = new Swiper('.swiper-project2', {
+    navigation: {
+      nextEl: '.swiper-project2-next',
+      prevEl: '.swiper-project2-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+  });
+
+
+    
+  </script>
+</body>
+</html>
+

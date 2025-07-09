@@ -1,0 +1,214 @@
+
+            
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books – SOL Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: cover;
+    }
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .back-button:hover { background: #f0f0f0; }
+
+    section {
+      padding: 4rem 2rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-item {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+    .project-item:hover {
+      transform: scale(1.02);
+    }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #test .project-item {
+      transform: scale(0.9);
+      padding: 0.5rem;
+    }
+    #test .project-item img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      font-size: 0.875rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:#000;">VersalDGN</a></div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#test">Test Work</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" style="position: relative;">
+    <img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-06-01%20213721.png?v=1748807634214" alt="Main Photo">
+    <a class="back-button" href="index.html">← Back</a>
+  </div>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Carousel 1 -->
+      <div class="project-item">
+        <h3>Typography Book A</h3>
+        <p>Typography-focused book design</p>
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/cover.png?v=1751958223505/600x800?text=1" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web2.png?v=1751819283902/600x800?text=2" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web3.png?v=1751819336457/600x800?text=3" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web4.png?v=1751819313619/600x800?text=4" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web5.png?v=1751819320181/600x800?text=5" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.me/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web6.png?v=1751819322566/600x800?text=6" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.me/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web7.png?v=1751819332450/600x800?text=7" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web8.png?v=1751819316538/600x800?text=8" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web9.png?v=1751819360294/600x800?text=9" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web10.png?v=1751819341896/600x800?text=10" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web11.png?v=1751819342223/600x800?text=11" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.me/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web12.png?v=1751819364193/600x800?text=12" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.me/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web13.png?v=1751819373208/600x800?text=13" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web14.png?v=1751819377539/600x800?text=14" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.me/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web15.png?v=1751819370338/600x800?text=15" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/magazine%20for%20web16.png?v=1751819378161/600x800?text=16" /></div>
+            <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=17" /></div>
+           
+            <!-- ...add up to 40 slides -->
+          </div>
+          <div class="swiper-button-next swiper1-next"></div>
+          <div class="swiper-button-prev swiper1-prev"></div>
+        </div>
+      </div>
+
+      <!-- Carousel 2 -->
+      <div class="project-item">
+        <h3>Typography Book B</h3>
+        <p>Second book with matching layout</p>
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-07_21-50-33.jpg?v=1751917903579/600x800?text=1" /></div>
+             <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-07_21-50-43.jpg?v=1751917925104/600x800?text=2" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-07_21-50-41%20(2).jpg?v=1751917924069/600x800?text=3" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-07_21-50-32.jpg?v=1751917902781/600x800?text=4" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-07_21-50-44.jpg?v=17519179261765/600x800?text=5" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=6" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=6" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=7" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=8" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=9" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=10" /></div> <div class="swiper-slide"><img src="https://cdn.glitch.global/41155269-ae0f-41f9-a566-f620bdc2e3ec/photo_2025-07-06_18-30-28.jpg?v=1751819445335/600x800?text=11" /></div>
+            <!-- ...add up to 40 slides -->
+          </div>
+          <div class="swiper-button-next swiper2-next"></div>
+          <div class="swiper-button-prev swiper2-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="test">
+    <h2>Test Work</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="https://cdn.glitch.global/.../14.png?v=..." alt="Test 1">
+        <h3>Exploration A</h3>
+        <p>Experimental typography and layout test.</p>
+      </div>
+      <div class="project-item">
+        <img src="https://cdn.glitch.global/.../14.png?v=..." alt="Test 2">
+        <h3>Mockup B</h3>
+        <p>Early-stage concept mockup.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SOL Portfolio – All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper1', {
+      navigation: {
+        nextEl: '.swiper1-next',
+        prevEl: '.swiper1-prev',
+      },
+      loop: true,
+      slidesPerView: 1,
+    });
+
+    new Swiper('.swiper2', {
+      navigation: {
+        nextEl: '.swiper2-next',
+        prevEl: '.swiper2-prev',
+      },
+      loop: true,
+      slidesPerView: 1,
+    });
+  </script>
+</body>
+</html>

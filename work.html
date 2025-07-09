@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Versal Design Clone</title>
+  <link rel="stylesheet" href="css/styles.css" />
+<style>
+  /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Projects Section */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+/* Slogan Section */
+.slogan {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact form {
+  margin-top: 1rem;
+}
+
+.contact input {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+
+.contact button {
+  padding: 0.5rem 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+  
+  
+  </style>
+  
+  </head>
+  
+<body>
+  <header>
+    <div class="logo">Versal</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>BORING IS BAD</h1>
+    <p>For Business</p>
+    <div class="scroll-indicator">Scroll ↓</div>
+  </section>
+
+  <section id="projects" class="projects">
+    <!-- Project items will go here -->
+  </section>
+
+  <section class="slogan">
+    <h2>TELLING NEW STORIES</h2>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>LET’S MAKE SOME Money, Honey</h2>
+    <form>
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Versal. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+    
+    <script>
+    
+    // Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+    </script>
+    
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
