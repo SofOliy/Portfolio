@@ -210,9 +210,11 @@
       slidesPerView: 1,
     });
     document.querySelectorAll('img').forEach(img => {
-    img.loading = 'lazy';
-    img.decoding = 'async';
-  });
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      if (!img.hasAttribute('width')) img.width = 800;
+      if (!img.hasAttribute('height')) img.height = 600;
+    });
   </script>
 </body>
 </html>
