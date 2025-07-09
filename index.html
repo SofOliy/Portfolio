@@ -542,6 +542,12 @@
         endText.classList.remove('visible');
       }
     });
+     document.querySelectorAll('img').forEach(img => {
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      if (!img.hasAttribute('width')) img.width = 800;
+      if (!img.hasAttribute('height')) img.height = 600;
+    })
   </script>
 
 </body>
